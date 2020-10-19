@@ -3,27 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		471CC3F7253CC6510046310F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC3F6253CC6510046310F /* AppDelegate.swift */; };
-		471CC3F9253CC6510046310F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC3F8253CC6510046310F /* SceneDelegate.swift */; };
 		471CC3FB253CC6510046310F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC3FA253CC6510046310F /* ViewController.swift */; };
-		471CC3FE253CC6510046310F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471CC3FC253CC6510046310F /* Main.storyboard */; };
 		471CC400253CC6520046310F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471CC3FF253CC6520046310F /* Assets.xcassets */; };
 		471CC403253CC6520046310F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471CC401253CC6520046310F /* LaunchScreen.storyboard */; };
+		854D6FA79B9D054D1BC55036 /* Pods_DtpStat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8831D1365C64098299915E9 /* Pods_DtpStat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		471CC3F3253CC6510046310F /* DtpStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DtpStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		471CC3F6253CC6510046310F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		471CC3F8253CC6510046310F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		471CC3FA253CC6510046310F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		471CC3FD253CC6510046310F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		471CC3FF253CC6520046310F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		471CC402253CC6520046310F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		471CC404253CC6520046310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E214ED80B0CBFA6718C5D2 /* Pods-DtpStat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DtpStat.release.xcconfig"; path = "Target Support Files/Pods-DtpStat/Pods-DtpStat.release.xcconfig"; sourceTree = "<group>"; };
+		D827FE6FB37E966DCE76E995 /* Pods-DtpStat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DtpStat.debug.xcconfig"; path = "Target Support Files/Pods-DtpStat/Pods-DtpStat.debug.xcconfig"; sourceTree = "<group>"; };
+		D8831D1365C64098299915E9 /* Pods_DtpStat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DtpStat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854D6FA79B9D054D1BC55036 /* Pods_DtpStat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311A62B9D3D56A699A649BC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D827FE6FB37E966DCE76E995 /* Pods-DtpStat.debug.xcconfig */,
+				A7E214ED80B0CBFA6718C5D2 /* Pods-DtpStat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		471CC3EA253CC6510046310F = {
 			isa = PBXGroup;
 			children = (
 				471CC3F5253CC6510046310F /* DtpStat */,
 				471CC3F4253CC6510046310F /* Products */,
+				311A62B9D3D56A699A649BC3 /* Pods */,
+				F49E15775CD423D39AB2DC77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +69,20 @@
 			isa = PBXGroup;
 			children = (
 				471CC3F6253CC6510046310F /* AppDelegate.swift */,
-				471CC3F8253CC6510046310F /* SceneDelegate.swift */,
 				471CC3FA253CC6510046310F /* ViewController.swift */,
-				471CC3FC253CC6510046310F /* Main.storyboard */,
 				471CC3FF253CC6520046310F /* Assets.xcassets */,
 				471CC401253CC6520046310F /* LaunchScreen.storyboard */,
 				471CC404253CC6520046310F /* Info.plist */,
 			);
 			path = DtpStat;
+			sourceTree = "<group>";
+		};
+		F49E15775CD423D39AB2DC77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8831D1365C64098299915E9 /* Pods_DtpStat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 471CC407253CC6520046310F /* Build configuration list for PBXNativeTarget "DtpStat" */;
 			buildPhases = (
+				59487086670A06301DCBF0D4 /* [CP] Check Pods Manifest.lock */,
 				471CC3EF253CC6510046310F /* Sources */,
 				471CC3F0253CC6510046310F /* Frameworks */,
 				471CC3F1253CC6510046310F /* Resources */,
+				5BF84D04B2FE53CBBE8FB427 /* [CP] Embed Pods Frameworks */,
+				9C586F6081A81A778B9842F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +147,69 @@
 			files = (
 				471CC403253CC6520046310F /* LaunchScreen.storyboard in Resources */,
 				471CC400253CC6520046310F /* Assets.xcassets in Resources */,
-				471CC3FE253CC6510046310F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59487086670A06301DCBF0D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DtpStat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF84D04B2FE53CBBE8FB427 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C586F6081A81A778B9842F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DtpStat/Pods-DtpStat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		471CC3EF253CC6510046310F /* Sources */ = {
@@ -139,21 +218,12 @@
 			files = (
 				471CC3FB253CC6510046310F /* ViewController.swift in Sources */,
 				471CC3F7253CC6510046310F /* AppDelegate.swift in Sources */,
-				471CC3F9253CC6510046310F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		471CC3FC253CC6510046310F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				471CC3FD253CC6510046310F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		471CC401253CC6520046310F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +353,14 @@
 		};
 		471CC408253CC6520046310F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D827FE6FB37E966DCE76E995 /* Pods-DtpStat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVDZUH3A96;
 				INFOPLIST_FILE = DtpStat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +374,14 @@
 		};
 		471CC409253CC6520046310F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E214ED80B0CBFA6718C5D2 /* Pods-DtpStat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CVDZUH3A96;
 				INFOPLIST_FILE = DtpStat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
